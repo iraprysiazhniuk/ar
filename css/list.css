@@ -42,14 +42,15 @@ section {
   height: 90vh;
   width: 100%;
 }
-.logo {
+.logo{
   padding-left: 3em;
+  width: 10em;
 }
-.logo img {
-  width: 132px;
-  height: 64px;
-  left: 60px;
-  top: 43px;
+.logo img{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  max-width: 100%;
 }
 
 .button {
