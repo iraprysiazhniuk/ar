@@ -1,129 +1,224 @@
 html{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-  body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+position: relative;
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 100%;
+font-size: 14px;
+line-height: 16px;
+background: linear-gradient(9.83deg,#e3f2fd 6.46%,rgba(255, 255, 255, 0) 92.73%)no-repeat,linear-gradient(180deg, #e4e4e4 0%, rgba(235, 235, 235, 0) 100%) no-repeat,#ffffff;
+background-attachment: fixed;
+}
+.nav{
   width: 100%;
-  font-size: 14px;
-  line-height: 16px;
-  background: linear-gradient(9.83deg,#e3f2fd 6.46%,rgba(255, 255, 255, 0) 92.73%)no-repeat,linear-gradient(180deg, #e4e4e4 0%, rgba(235, 235, 235, 0) 100%) no-repeat,#ffffff;
-  background-attachment: fixed;
-  }
-  .nav{
-    width: 100%;
-    height: 10vh;
-    left: 0px;
-    top: 0px;
+  height: 10vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #FFFFFF;
+}
+.logo{
+  padding-left: 3em;
+  width: 10em;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  max-width: 100%;
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding-left: 0; 
+  display: flex;  
+  width: 30%;
+  justify-content: flex-end;
+}
+li{
+    margin-left: 3em;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;  
+    display: block;
+    color: #A4B0BE;
+}
+.exit{
+    color: #1E272E;
+    width: 55%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #FFFFFF;
-    }
-        ul {
-        list-style: none; 
-        margin: 0;
-        padding-left: 0; 
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+.plate{
+  padding-top:10em;
+  position: absolute;
+  left: 0;
+  top: 21.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plate img{
+  margin-top: 7em;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  height: 90%;
+  top: 1%;
+}
+.nameOfRestaurant{
+  display: flex;
+  padding-left: 2%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+      .information{
         display: flex;
-        margin-left: 6em;
-      }
-      li{
-          margin-left: 3em;
-          font-size: 18px;
-      }
-      a {
-          text-decoration: none;  
-          display: block;
-          color: #A4B0BE;
-      }
-      .logo{
-        padding-left: 3em;
-      }
-      .logo img{
-        width: 132px;
-        height: 64px;
-        left: 60px;
-        top: 43px;
-      }
-      .plate{
-        padding-top:10em;
-        position: absolute;
-        left: 0;
-        top: 21.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-        .plate img{
-        margin-top: 10em;
-        position: fixed;
-        left: 0;
-        z-index: -1;
-      }
-      .main{
-          display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
       }
       .data{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 3px;
         color: #747D8C;
-        width: 500px;
-        height: 605px;
-        left: 60px;
-        top: 197px;
-        margin-right: 4em;
-        margin-top: 2em;
-        
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 30%;
       }
       .address{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 3px;
         color: #747D8C;
-        width: 585px;
-        height: 605px;
-        left: 668px;
-        top: 197px;
-        margin-right: 2em;
-        margin-top: 2em;
-        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 30%;
       }
       .schedule{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 3px;
         color: #747D8C;
-        width: 587px;
-        height: 605px;
-        left: 1273px;
-        top: 197px;
-        margin-right: 2em;
-        margin-top: 2em;
-        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 30%;
       }
       h3{
         color: #2196F3;
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
-
+        padding-left: 12%;
+        padding-bottom: 4%;
       }
       input{
         background: #FFFFFF;
         border: 0.5px solid #747D8C;
         box-sizing: border-box;
         border-radius: 44px;
-        width: 415px;
-        height: 40px;
-        left: 212px;
-        top: 295px;
+        width: 100%;
+        height: 90%; 
+        padding: 1rem;
+      }
+      .coordinates{
+        display: flex;
+        width: 100%;
+      }
+      .small{
+        width: 25%;
+        height: 85%;
+      }
+      .time{
+        width: 65%;
+        height: 75%;
       }
       ::placeholder{
         color: #ABB2BA;
       }
+      .buttons{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.4%;
+        padding-right: 2.4%;
+      }
+      .delete{
+        border: 1px solid #64B5F6;
+        border-radius: 44px;
+        text-align: center;
+        color: #64B5F6;
+        width: 10%;
+        min-width: 222px;
+        height: 100%;
+      }
+      .save{
+        background: #64B5F6;
+        border-radius: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 10%;
+        min-width: 222px;
+        height: 100%;
+      }
+      .clock{
+        width: 12%;
+        height: 45%;
+      }
+      .nameOfRest{
+        -webkit-appearance: none;
+        cursor: pointer;
+        color: black;
+        margin-top: 11px;
+        margin-left: 10px;
+        margin-right: 15px;
+      }
+      .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 4%;
+      }
+      .leftColumn{
+        text-align: right;
+        width: 24%;
+      }
+      .rightColumn{
+        width: 70%;
+        height: 100%;
+      }   
+      .rightCol{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 27%;
+        padding-right: 13%;
+      }
+      #time{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+
 
       
