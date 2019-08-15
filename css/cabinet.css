@@ -79,6 +79,7 @@ a {
 .nameOfRestaurant{
   display: flex;
   padding-left: 2%;
+  align-items: center;
 }
 .main{
     display: flex;
@@ -136,6 +137,21 @@ a {
         height: 90%; 
         padding: 1rem;
       }
+      #photo{
+        border-radius: 3px;
+        height: 11rem;
+      }
+      .photo-container{
+        display: flex;
+        width: 99%;
+        align-items: center;
+        position: relative;
+      }
+      .photoaparat{
+        position: absolute;
+        bottom: 45%;
+        left: 45%;
+      }
       .coordinates{
         display: flex;
         width: 100%;
@@ -147,6 +163,7 @@ a {
       .time{
         width: 65%;
         height: 75%;
+        color: #ABB2BA;
       }
       ::placeholder{
         color: #ABB2BA;
@@ -165,6 +182,7 @@ a {
         width: 10%;
         min-width: 222px;
         height: 100%;
+        background-color: rgba(255, 255, 255, 0);
       }
       .save{
         background: #64B5F6;
@@ -176,16 +194,22 @@ a {
         height: 100%;
       }
       .clock{
-        width: 12%;
-        height: 45%;
+        width: 5%;
+        height: 40%;
       }
       .nameOfRest{
         -webkit-appearance: none;
         cursor: pointer;
         color: black;
-        margin-top: 11px;
         margin-left: 10px;
         margin-right: 15px;
+      }
+      .textOfRestaurant{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #57606F;
+        padding-left: 2%;
       }
       .row{
         display: flex;
@@ -218,6 +242,21 @@ a {
         justify-content: space-between;
         align-items: center;
       }
+      #rightSchedule{
+        width: 25%;
+        display: flex;
+        align-items: center;
+      }
+      #appt{
+        width: 25%;
+      }
+      #sun, #sat{
+        color: #2F3542;
+      }
+      #fri{
+        color: #CED6E0;
+      }
+
 
 
 
