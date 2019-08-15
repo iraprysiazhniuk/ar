@@ -40,7 +40,7 @@ ul {
   margin: 0;
   padding-left: 0; 
   display: flex;  
-  width: 30%;
+  width: 28%;
   justify-content: flex-end;
 }
 li{
@@ -54,10 +54,9 @@ a {
 }
 .exit{
     color: #1E272E;
-    width: 55%;
+    width: 59.5%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%;
 }
 .plate{
   padding-top:10em;
@@ -151,6 +150,7 @@ a {
         position: absolute;
         bottom: 45%;
         left: 45%;
+        cursor: pointer;
       }
       .coordinates{
         display: flex;
@@ -194,8 +194,8 @@ a {
         height: 100%;
       }
       .clock{
-        width: 5%;
-        height: 40%;
+        width: 4%;
+        height: 41%;
       }
       .nameOfRest{
         -webkit-appearance: none;
@@ -248,7 +248,8 @@ a {
         align-items: center;
       }
       #appt{
-        width: 25%;
+        width: 20%;
+        height: 100%;
       }
       #sun, #sat{
         color: #2F3542;
@@ -256,7 +257,13 @@ a {
       #fri{
         color: #CED6E0;
       }
-
+      .scheduleBlock{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 68%;
+        padding-left: 9%;
+      }
 
 
 
