@@ -264,6 +264,10 @@ a {
         height: 68%;
         padding-left: 9%;
       }
+      input[type=time]::-webkit-inner-spin-button,
+      input[type=time]::-webkit-outer-spin-button {
+        opacity: 1;
+      }
 
 
 
