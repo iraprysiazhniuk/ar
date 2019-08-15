@@ -28,7 +28,7 @@
   </div>
   <div class="nameOfRestaurant">
     <a class="nameOfRest" type="button"><img src="img/back.png" /></a>
-    <p>Название заведения</p>
+    <p class="textOfRestaurant">Название заведения</p>
   </div>
   <div class="main">
   <div class="information">
@@ -50,8 +50,13 @@
       </div>
       </div>
       <div class="row">
-          <div class="leftColumn"><label for="photo">828x515</label></div>
-          <div class="rightColumn"><input type="text" name="photo" id="photo"></div>
+          <div class="leftColumn"><label for="photo">828x515</label></div> 
+          <div class="rightColumn">
+          <div class="photo-container">
+          <input type="text" name="photo" id="photo">
+          <img class="photoaparat" src="img/photoaparat.png">
+          </div>
+          </div>
       </div>
       <div class="row">
           <div class="leftColumn"><label for="site">Сайт</label></div>
@@ -107,7 +112,7 @@
         <label for="appt">Пн.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
+        <div class="rightColumn" id="rightSchedule">
           <p class="weekend"></p>
         </div>
       </div>
@@ -118,7 +123,7 @@
         <label for="appt">Вт.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
+        <div class="rightColumn" id="rightSchedule">
           <p class="weekend"></p>
         </div>
       </div>
@@ -129,7 +134,7 @@
         <label for="appt">Ср.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
+        <div class="rightColumn" id="rightSchedule">
           <p class="weekend"></p>
         </div>
       </div>
@@ -140,7 +145,7 @@
         <label for="appt">Чт.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
+        <div class="rightColumn" id="rightSchedule">
           <p class="weekend"></p>
         </div>
       </div>
@@ -151,8 +156,8 @@
         <label for="appt">Пт.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
-          <p class="friday">Выходной</p>
+        <div class="rightColumn" id="rightSchedule">
+          <p class="friday" id="fri">Выходной</p>
         </div>
       </div>
       
@@ -163,8 +168,8 @@
         <label for="appt">Сб.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
-          <p class="weekend">Выходной</p>
+        <div class="rightColumn" id="rightSchedule">
+          <p class="weekend" id="sun">Выходной</p>
         </div>
       </div>
       </div>
@@ -174,8 +179,8 @@
         <label for="appt">Вс.</label>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
         <input class="time" type="time" id="appt" name="appt" min="00:00" max="23:59" value="00:00" required>
-        <div class="rightColumn">
-          <p class="weekend">Выходной</p>
+        <div class="rightColumn" id="rightSchedule">
+          <p class="weekend" id="sat">Выходной</p>
         </div>
       </div>
     </div>
