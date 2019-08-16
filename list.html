@@ -1,84 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>List</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/list.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="nav">
-      <div class="logo">
-        <img src="img/logo.png" />
-      </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>List</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/list.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      <img src="img/logo.png" />
     </div>
-    <section>
-      <input
-        class="button"
-        type="button"
-        name="submit"
-        value="Добавить заведение"
-        id="button"
-      />
-      <div class="flex">
-        <div class="column">
-          <div class="header"><p>Фото</p></div>
-          <div><img class="list" src="img/list1.png"/></div>
-          <div><img class="list" src="img/list2.png"/></div>
-          <div><img class="list" src="img/list3.png"/></div>
-          <div><img class="list" src="img/list1.png"/></div>
-          <div><img class="list" src="img/list1.png"/></div>
+  </div>
+  <section>
+    <input class="button" type="button" name="submit" value="Добавить заведение" id="button" />
+    <div class="flex">
+      <div class="header">
+        <div class="column1"><p>Фото</p></div>
+        <div class="column2"><p>Название</p></div>
+        <div class="column3">
+         <div class="wrapper">
+            <div class="dropdown">
+                <p>Город</p>
+                <button onclick="myFunction()" class="dropbtn"><img class="down" src="img/arrow.png"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#kiev">Киев</a>
+                    <a href="#nikolaev">Николаев</a>
+                  </div>
+                </div>
+         </div>
         </div>
-        <div class="column">
-          <div class="header"><p>Название</p></div>
-          <div><p>Bassano Restorante</p></div>
-          <div><p>Bassano Restorante</p></div>
-          <div><p>Bassano Restorante</p></div>
-          <div><p>Bassano Restorante</p></div>
-          <div><p>Bassano Restorante</p></div>
-        </div>
-        <div class="column">
-          <div class="header">
-            <select class="select-css">
-              <option>Город</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
+        <div class="column4"> 
+          <div class="wrapper">
+              <select>
+                  <option>Тип заведения</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
           </div>
-          <div><p>Киев</p></div>
-          <div><p>Николаев</p></div>
-          <div><p>Киев</p></div>
-          <div><p>Киев</p></div>
-          <div><p>Киев</p></div>
-        </div>
-        <div class="column">
-          <div class="header">
-            <select placeholder="Тип заведения">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>
-          <div><p>Ресторан</p></div>
-          <div><p>Ресторан</p></div>
-          <div><p>Ресторан</p></div>
-          <div><p>Ресторан</p></div>
-          <div><p>Ресторан</p></div>
         </div>
       </div>
-    </section>
-    <div class="quantity">
-      <p>Заведений в базе <strong>2000</strong></p>
+      <div class="item">
+        <div class="column1">
+          <img class="list" src="img/list1.png" />
+        </div>
+        <div class="column2">
+          <p>Bassano Restorante</p>
+        </div>
+        <div class="column3">
+          <p>Киев</p>
+        </div>
+        <div class="column4">
+          <p>Ресторан</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="column1">
+          <img class="list" src="img/list2.png" />
+        </div>
+        <div class="column2">
+          <p>Bassano Restorante</p>
+        </div>
+        <div class="column3">
+          <p>Николаев</p>
+        </div>
+        <div class="column4">
+          <p>Ресторан</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="column1">
+          <img class="list" src="img/list3.png" />
+        </div>
+        <div class="column2">
+          <p>Bassano Restorante</p>
+        </div>
+        <div class="column3">
+          <p>Киев</p>
+        </div>
+        <div class="column4">
+          <p>Ресторан</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="column1">
+          <img class="list" src="img/list1.png" />
+        </div>
+        <div class="column2">
+          <p>Bassano Restorante</p>
+        </div>
+        <div class="column3">
+          <p>Киев</p>
+        </div>
+        <div class="column4">
+          <p>Ресторан</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="column1">
+          <img class="list" src="img/list1.png" />
+        </div>
+        <div class="column2">
+          <p>Bassano Restorante</p>
+        </div>
+        <div class="column3">
+          <p>Киев</p>
+        </div>
+        <div class="column4">
+          <p>Ресторан</p>
+        </div>
+      </div>
     </div>
-    <div class="plate">
-      <img src="img/plate.png" />
-    </div>
-  </body>
+    <!-- <div class="flex">
+      <div class="column1">
+        <div class="header text_align_center">
+          <p>Фото</p>
+        </div>
+        <div></div>
+        <div><img class="list" src="img/list2.png" /></div>
+        <div><img class="list" src="img/list3.png" /></div>
+        <div><img class="list" src="img/list1.png" /></div>
+        <div><img class="list" src="img/list1.png" /></div>
+      </div>
+      <div class="column2">
+        <div class="header">
+          <p>Название</p>
+        </div>
+        <div>
+
+        </div>
+        <div>
+          <p>Bassano Restorante</p>
+        </div>
+        <div>
+          <p>Bassano Restorante</p>
+        </div>
+        <div>
+          <p>Bassano Restorante</p>
+        </div>
+        <div>
+          <p>Bassano Restorante</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="header">
+
+        </div>
+        <div>
+          <p>Киев</p>
+        </div>
+        <div>
+          <p>Николаев</p>
+        </div>
+        <div>
+          <p>Киев</p>
+        </div>
+        <div>
+          <p>Киев</p>
+        </div>
+        <div>
+          <p>Киев</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="header">
+
+        </div>
+        <div>
+          <p>Ресторан</p>
+        </div>
+        <div>
+          <p>Ресторан</p>
+        </div>
+        <div>
+          <p>Ресторан</p>
+        </div>
+        <div>
+          <p>Ресторан</p>
+        </div>
+        <div>
+          <p>Ресторан</p>
+        </div>
+      </div> 
+    </div> -->
+  </section>
+  <div class="quantity">
+    <p>Заведений в базе <strong>2000</strong></p>
+  </div>
+  <div class="plate">
+    <img src="img/plate.png" />
+  </div>
+
+  <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+      
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+</body>
+
 </html>
